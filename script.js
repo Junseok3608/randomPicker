@@ -1,6 +1,7 @@
 document.getElementById("startButton").addEventListener("click", startPicker);
 document.getElementById("drawButton").addEventListener("click", drawNumber);
 document.getElementById("resetButton").addEventListener("click", resetPicker);
+document.getElementById("backButton").addEventListener("click", backToStart);
 
 let maxNumber;
 let availableNumbers = [];
@@ -18,7 +19,7 @@ function startPicker() {
 
 function drawNumber() {
   if (availableNumbers.length === 0) {
-    alert("No more numbers to draw. Resetting...");
+    alert("모든 수를 한 번씩 뽑았습니다. 처음으로...");
     resetPicker();
     return;
   }
@@ -47,4 +48,8 @@ function resetPicker() {
   document.getElementById("picker").style.display = "none";
   document.getElementById("result").textContent = "";
   document.getElementById("resetButton").style.display = "none";
+}
+
+function backToStart() {
+  resetPicker();
 }

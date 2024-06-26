@@ -28,6 +28,7 @@ button {
   cursor: pointer;
 }
 
-#resetButton {
+#resetButton,
+#backButton {
   margin-top: 20px;
 }
