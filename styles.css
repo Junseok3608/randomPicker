@@ -6,6 +6,7 @@ body {
   height: 100vh;
   background-color: #f0f0f0;
   margin: 0;
+  position: relative;
 }
 
 .container {
@@ -31,4 +32,22 @@ button {
 #resetButton,
 #backButton {
   margin-top: 20px;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.8em;
+  color: #aaa;
+  pointer-events: none;
+}
+
+.watermark a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.watermark a:hover {
+  text-decoration: underline;
 }

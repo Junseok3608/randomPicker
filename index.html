@@ -3,24 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>랜덤 숫자 뽑기</title>
+    <title>Random Number Picker</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>랜덤 숫자 뽑기</h1>
+      <h1>Random Number Picker</h1>
       <div id="setup">
-        <label for="maxNumber">최대값 입력:</label>
+        <label for="maxNumber">Enter Maximum Value:</label>
         <input type="number" id="maxNumber" min="1" />
-        <button id="startButton">시작</button>
+        <button id="startButton">Start</button>
       </div>
       <div id="picker" style="display: none">
-        <button id="drawButton">뽑기</button>
+        <button id="drawButton">Draw Number</button>
         <div id="result"></div>
         <button id="resetButton" style="display: none">Reset</button>
-        <button id="backButton">처음으로</button>
+        <button id="backButton">Back to Start</button>
       </div>
     </div>
+    <div class="watermark">Created by <a href="https://github.com/your-github-id" target="_blank">your-github-id</a></div>
     <script src="script.js"></script>
   </body>
 </html>

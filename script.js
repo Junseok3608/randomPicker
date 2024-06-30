@@ -19,7 +19,7 @@ function startPicker() {
 
 function drawNumber() {
   if (availableNumbers.length === 0) {
-    alert("모든 수를 한 번씩 뽑았습니다. 처음으로...");
+    alert("No more numbers to draw. Resetting...");
     resetPicker();
     return;
   }
@@ -53,3 +53,11 @@ function resetPicker() {
 function backToStart() {
   resetPicker();
 }
+
+// 워터마크 동적으로 추가
+document.addEventListener("DOMContentLoaded", () => {
+  const watermark = document.createElement("div");
+  watermark.className = "watermark";
+  watermark.innerHTML = 'Created by <a href="https://github.com/your-github-id" target="_blank">your-github-id</a>';
+  document.body.appendChild(watermark);
+});
